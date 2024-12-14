@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
 
@@ -30,12 +31,15 @@ const Navbar = () => {
                 {
                     menu.map(item=>(
                         <ul className='text-[16px]'>
-                            <li>
+                            <li className='font-semibold'>
                                 <Link to={item.path}>{item.displayName}</Link>
                             </li>
                         </ul>
                     ))
                 }
+            </div>
+            <div className='md:hidden text-[30px]'>
+                <MenuIcon />
             </div>
         </div>
     </>
