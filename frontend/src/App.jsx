@@ -5,6 +5,8 @@ import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
 import Services from './components/services/Services';
 import Doctor from './components/doctor/Doctor';
+import Login from './components/login/Login';
+import Register from './components/register/Register';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/services' element={<Services />} />
             <Route path='/doctor/:id' element={<Doctor />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
           </Routes>
           <Footer />
         </BrowserRouter>

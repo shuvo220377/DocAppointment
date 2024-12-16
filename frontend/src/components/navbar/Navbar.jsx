@@ -37,6 +37,7 @@ const Navbar = () => {
                         </ul>
                     ))
                 }
+                <Link to='/login' className='py-1 px-3 border border-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all' >Login</Link>
             </div>
             <div className='md:hidden text-[30px]'>
                 <MenuIcon />
